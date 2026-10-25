@@ -1,0 +1,29 @@
+name: PunchSnowball
+version: 1.4.0
+main: com.example.punchsnowball.PunchSnowballPlugin
+api-version: '1.21.11'
+description: Punch snowball, reusable TNT, and freezing wind charge
+commands:
+  givesnowball:
+    description: Gives a player an infinite Punch Snowball
+    usage: /givesnowball [player]
+    permission: punchsnowball.give
+  givetnt:
+    description: Gives a player reusable enchanted Infinite TNT
+    usage: /givetnt [player]
+    permission: punchsnowball.give
+  givewindcharge:
+    description: Gives a player an infinite Freezing Wind Charge
+    usage: /givewindcharge [player]
+    permission: punchsnowball.give
+  punchreload:
+    description: Reloads snowball and TNT settings from config.yml
+    usage: /punchreload
+    permission: punchsnowball.reload
+permissions:
+  punchsnowball.give:
+    description: Allows giving custom items
+    default: op
+  punchsnowball.reload:
+    description: Allows reloading settings
+    default: op
